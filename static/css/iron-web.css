@@ -1,0 +1,828 @@
+@charset "utf-8";
+
+/*
+Media: Screen, Projection
+--
+Author: 2012, Mikael Carrara.
+URL: http://mikaelcarrara.com/
+*/
+
+
+/* Reset */
+
+body, h1, h2, h3, h4,
+form, fieldset, input, label, p,
+em, strong, a, img,vfg ul, li {
+	padding:0; margin:0; border:0;
+	vertical-align:baseline;
+	font-style:normal;
+}
+
+header, footer, aside, nav, article, section {display:block}
+
+html {font-size: 62.5%}
+
+p {margin:20px 0 0 0}
+label {cursor:pointer}
+img {border:none}
+
+ul {margin:0; padding:0}
+li {list-style-type:none}
+
+
+/* Header Titles */
+
+h1 a {
+	width:384px; height:110px;
+	background:url('../img/logo.png') no-repeat;
+	text-indent:-9999px;
+	margin:51px 0 40px 0;
+	outline:none;
+	float:left;
+}
+
+h2 {
+	width:100%;
+	text-transform:uppercase;
+	margin:0 0 10px 0;
+	font-size:14px;
+	color:#ccc;
+	float:left;
+    clear:both;
+}
+
+h3 {
+    clear:both;
+}
+
+.liner {
+    width:100%;
+	background:url('../img/liner.png') bottom center no-repeat;
+    padding:0 0 50px 0;
+    margin:13px 0 10px 0;
+    float:left;
+}
+
+
+/* Components */
+
+.x-line {
+	width:920px; height:5px;
+	background:url('../img/x-line.png') center no-repeat;
+	float:left;
+}
+
+a {
+	text-decoration:none;
+	cursor:pointer;
+	color:#ccc;
+}
+
+a:hover {
+	color:#fff;
+}
+
+
+/* Page */
+
+body {
+	font:14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background:#000 url('../img/bg.jpg') top center no-repeat;
+	line-height:22px;
+	color:#fff;
+	margin:0;
+}
+
+#page {
+	width:920px;
+	padding:0px 30px 0px 30px;
+	margin:auto;
+}
+
+
+/* Header */
+
+header {
+	width:920px; height:180px;
+	background:url('../img/x-line.png') bottom no-repeat;
+	position:relative;
+	float:left;
+}
+
+
+/* Infos */
+
+#infos2 {
+	width:259px; height:99px;
+	background:url('../img/infos2.jpg');
+	position:absolute;
+	right:0; top:0;
+	float:right;
+}
+
+#infos {
+	width:200px; height:95px;
+	background:url('../img/infos.png') top repeat-y;
+	padding:0 15px 0 10px;
+	position:absolute;
+	right:0; top:0;
+	font-size:10px;
+	float:right;
+}
+
+#infos li {
+	width:191px; height:32px;
+	padding:0 0 0 45px;
+	margin:10px 0 0 0;
+	float:left;
+}
+
+#phone, #mail {
+	background:url('../img/sprite-infos.png') left no-repeat;
+}
+
+#phone {
+	background-position:0 0;
+	line-height:15px;
+}
+
+#mail {
+	background-position:0 -32px;
+	line-height:17px;
+}
+
+#phone strong {
+	font-size:13px;
+}
+
+
+/* Nav */
+
+nav ul {
+	width:450px;
+	margin:124px 0 0 0;
+	float:right;
+}
+
+nav li {
+	font-size:12px;
+	text-transform:uppercase;
+    position:relative;
+	margin:0 0 0 25px;
+	float:right;
+}
+
+nav a {
+	float:right;
+}
+
+.bullet {
+    width:18px; height:18px;
+    background:url('../img/nav-icon.png') no-repeat;
+    position:absolute;
+    bottom:-17px; right:0;
+    float:left;
+}
+
+
+/* Content */
+
+#content {
+	width:920px;
+	float:left;
+}
+
+
+/* Banner */
+
+#banner {
+	width:920px; height:465px;
+	background:#4c4c4c;
+	margin:30px 0 30px 0;
+	float:left;
+}
+
+#banner img {
+	width:890px; height:435px;
+	margin:15px 0 0 15px;
+	float:left;
+}
+
+
+/* Columns */
+
+.column {
+	width:290px; min-height:650px;
+	background:#222 url('../img/column-bg.jpg') left center no-repeat;
+	border:1px solid #000;
+	float:left;
+}
+
+.column h3, .column h4 {
+	width:260px; height:40px;
+	background-color:#000;
+	
+	background:
+		url('../img/sprite-icons.png') right no-repeat, 
+		url('../img/column-title-bg.png') top repeat-x;
+	
+	padding:0 15px 0 15px;
+	line-height:40px;
+	text-transform:uppercase;
+	font-weight:normal;
+	font-size:12px;
+	float:left;
+}
+
+.column iframe {
+	 margin:15px 0 14px 15px;
+	 float:left;
+}
+
+
+/* Treinamento */
+
+#treinamento {}
+	
+#treinamento h3, #treinamento h4 {
+	background:
+		url('../img/sprite-icons.png') 242px -1px no-repeat, 
+		url('../img/column-title-bg.png') top repeat-x;
+}
+
+/*-*/
+
+#treinos, #videos {
+	padding:15px;
+	float:left;
+}
+
+#treinos {
+  height:770px;
+  overflow:auto;
+}
+
+#treinos li, #videos li {
+	background:url('../img/x-line-short.png') top center no-repeat;
+	margin:9px 0 0 0;
+	padding:15px 0 0 0;
+	position:relative;
+	float:left;
+}
+
+#treinos li:first-child, #videos li:first-child {
+	margin:0;
+	padding:0;
+	background:none;
+}
+
+#treinos a img, #videos a img {
+	border:10px solid #4c4c4c;
+	outline:none;
+}
+
+#treinos a:hover img, #videos a:hover img {
+	border-color:#565656;
+}
+
+#treinos p, #videos p {
+	margin:5px 0 0 0;
+}
+
+/*-*/
+
+#videos span.play {
+	width:53px; height:53px;
+	background:url('../img/play.png') center no-repeat;
+	position:absolute;
+	text-indent:-9999px;
+	left:103px; top:92px;
+	z-index:100;
+	float:left;
+}
+
+#videos li:first-child span.play {
+	top:78px;
+}
+
+/*-*/
+
+#videos span.youtube {
+	width:75px; height:30px;
+	background:url('../img/youtube.png') center no-repeat;
+	position:absolute;
+	text-indent:-9999px;
+	right:0; bottom:-4px;
+	z-index:100;
+	float:left;
+}
+
+
+/* Iron TV */
+
+#iron-tv {
+  float:right;
+  margin:22px 0 0 0px;
+  width:605px;
+  min-height:312px;
+}
+
+#iron-tv h3 {
+	background:
+		url('../img/sprite-icons.png') 565px -41px no-repeat, 
+		url('../img/column-title-bg.png') top repeat-x;
+  width:575px;
+}
+
+#iron-tv li {
+  margin: 0 0 0 50px;
+  background:none;
+  padding:0px;
+}
+
+
+/* Curta, Facebook */
+
+#curta-fb {
+  float:right;
+  width:605px;
+  min-height:495px;
+}
+
+#curta-fb h3 {
+	background:
+		url('../img/sprite-icons.png') 565px -82px no-repeat, 
+		url('../img/column-title-bg.png') top repeat-x;
+  width:575px;
+}
+
+.fb-hk {
+	width:575px;
+	margin:15px 0 15px 15px;
+	background:#fff;
+	padding:0 0 30px 0;
+	float:left;
+}
+
+.y-liner {
+    width:335px;
+    background:url('../img/yy-line.png') left 18px no-repeat;
+    margin-right:30px;
+    float:right;
+}
+
+
+/* Ft Content */
+
+#ft-content {
+	width:920px;
+	background:url('../img/x-line.png') top center no-repeat;
+	margin:60px 0 0 0;
+	padding:60px 0 0 0;
+	float:left;
+}
+
+#ft-content div {
+	height:118px;
+	padding-top:27px;
+	float:left;
+}
+
+
+/* Horários */
+
+#horarios {
+  height:650px;
+	font-size:12px;
+	margin:17px 0 0 0;
+  overflow:auto;
+	float:right;
+}
+
+#horarios > img {
+    margin:20px 0 0 15px;
+}
+
+h3.hd-small {
+	width:130px !important;
+    display:none;
+}
+
+/*-*/
+
+#horarios ul {
+	height:auto !important;
+	padding:15px;
+	float:right;
+    width:90%;
+}
+	
+#horarios h4 {
+	background:
+		url('../img/sprite-icons.png') 244px -122px no-repeat,
+		url('../img/column-title-bg.png') top repeat-x;
+}
+
+#horarios li {
+	width:100%;
+	background:url('../img/x-line-short.png') bottom center no-repeat;
+	margin:0 0 11px 0;
+	padding:0 0 11px 0;
+	position:relative;
+	float:left;
+}
+
+#horarios strong {
+	font-size:11px;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#ccc;
+}
+
+#horarios p {
+	margin:0 0 0 0;
+}
+
+
+/* Instrutores */
+
+.column-equipe {
+    width:400px; height:650px;
+    background:url('../img/yy-line.png') left 0 no-repeat;
+	font-size:12px;
+	margin:17px 30px 0 0;
+    padding:0 0 0 30px;
+	float:right;
+}
+
+#equipe {
+	width:400px; height:650px;
+	background:#222 url('../img/column-bg.jpg') left center no-repeat;
+	border:1px solid #000;
+	float:right;
+}
+
+#equipe h4 {
+	width:370px; height:40px;
+	background-color:#000;
+
+	background:
+		url('../img/sprite-icons.png') 350px 0 no-repeat, 
+		url('../img/column-title-bg.png') top repeat-x;
+
+	padding:0 15px 0 15px;
+	line-height:40px;
+	text-transform:uppercase;
+	font-weight:normal;
+	font-size:12px;
+	float:left;
+}
+
+#equipe li {
+    width:385px;
+	background:url('../img/x-line-short.png') bottom center no-repeat;
+	margin:15px 0 0 15px;
+	padding:0 0 15px 0;
+	float:left;
+}
+
+#equipe img {
+    width:100px; height:100px;
+	border:10px solid #4c4c4c;
+    float:left;
+}
+
+#equipe li > div {
+    width:230px;
+    margin:0 15px 0 0;
+    float:right;
+}
+
+#equipe h5 {
+    width:255px;
+    font-weight:normal;
+    font-size:16px;
+    margin:0 !important;
+    float:left;
+}
+
+.funcao {
+    font-size:14px;
+    margin:0 0 0 0 !important;
+    color:#bababa;
+}
+
+.actions {
+    margin:10px 0 0 0 !important;
+    line-height:23px;
+}
+
+.tel-equipe {
+  	background:url('../img/y.png') left no-repeat;
+}
+
+.email-equipe {
+    
+}
+
+.facebook-equipe {
+    
+}
+
+
+/* Fotos */
+
+#fotos {
+	width:100%;
+    display:none;
+	float:left;
+}
+
+#fotos li {
+	margin:0 10px 10px 0;
+	float:left;
+}
+
+#fotos a img {
+	border:10px solid #4c4c4c;
+	outline:none;
+	float:left;
+}
+
+#fotos a:hover img {
+	border-color:#565656;
+}
+
+
+/*-*/
+
+#col-01 {
+	width:274px; 
+	background:url('../img/y-line-short.png') right no-repeat;
+	position:relative;
+	font-size:12px;
+	padding:0 30px 0 0;
+}
+
+#col-01 h4 {
+	font-size:22px;
+	font-weight:bold;
+	margin:0 0 0 70px;
+}
+
+/*-*/
+
+#col-02 {
+	width:233px; 
+	padding:0 20px 0 40px;
+}
+
+#col-02 h4 {
+	width:252px; height:31px;
+	background:url('../img/tel.png');
+	text-indent:-9999px;
+	margin:-5px 0 17px -5px;
+	float:left;
+}
+
+/*-*/
+
+#col-03 {
+	width:301px; 
+	background:url('../img/y-line-short.png') left no-repeat;
+	float:right !important;
+}
+
+#col-03 > a {
+	width:225px; height:84px;
+	background: url('../img/logos/bs-logo.png') no-repeat;
+	text-indent:-9999px;
+	margin:8px 20px 0 0;
+	outline:none;
+	float:right; 
+}
+
+#col-03 > a:hover {
+	background-position:0 -84px;
+}
+
+
+/* Social */
+
+#social {
+	margin:20px 0 0 0;
+	position:absolute;
+	left:0px; top:7px;
+}
+
+#social li, #social a {
+	width:24px; height:24px;
+	margin:0 5px 0 0;
+	float:left;
+}
+
+#social a {
+/*  background:url('../img/sprite-social.png') no-repeat;*/
+/*  text-indent:-9999px;*/
+	outline:none;
+	display:left;
+}
+
+#social a img.twitter {
+  position:relative;
+  top:-10px;
+  left:-10px;
+}
+
+
+#media-01 a {background-position:0 0}
+#media-01 a:hover {background-position:-24px 0}
+
+#media-02 a {background-position:0 -24px}
+#media-02 a:hover {background-position:-24px -24px}
+
+
+/* Int */
+
+.int {
+	width:890px !important;
+	background:#2a2828;
+	padding:30px 0 30px 30px;
+}
+
+.int #treinamento, .int #horarios {
+    width:290px; height:100%;
+}
+
+.int #horarios.scroll {
+  width:290px; height:1200px;
+}
+.int #horarios.scroll.full {
+  width:290px; height:auto;
+}
+
+.int #treinamento {
+  overflow:auto;
+	margin:17px 0 0 0;
+	float:right;
+}
+
+.content-int {
+	width:500px;
+	float:left;
+}
+.content-int.contact {
+  width:350px;
+}
+
+.content-int h3 {
+	text-shadow:#970021 0 1px 0;
+	width:98%; height:40px;
+	background:url('../img/content-int-h3-bg.png') left repeat-y;
+	margin:40px 0 25px 0;
+	padding:0 0 0 2%;
+	line-height:40px;
+	text-transform:uppercase;
+	font-size:17px;
+	color:#fff;
+	float:left;
+}
+
+.content-int h3:first-child {
+    margin-top:15px;
+}
+
+
+/* Tabs */
+
+#tabs {
+  position:relative;
+  width:100%; height:45px;
+  margin:0 0 0 0;
+  float:left;
+  z-index:10;
+}
+
+#tabs li {
+    margin:0 0 0 5px;
+    float:left;
+}
+
+#tabs li:first-child {
+    margin:0;
+}
+
+#tabs a {
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    width:120px !important; height:45px;
+	  background:#333;
+    font-size:15px;
+    line-height:45px;
+    padding:0 22px 0 22px;
+    color:#ccc;
+    float:left;
+}
+
+#tabs a.current {
+   background: #2a2828;
+}
+
+#tabs a:hover {
+    color:#fff;
+}
+
+
+/* Tabs Content */
+
+#tabs-cont {
+    width:100%;
+	background:url('../img/liner.png') bottom center no-repeat;
+    padding:0 0 50px 0;
+    margin:13px 0 10px 0;
+    float:left;
+}
+
+#tabs-cont p {
+    margin:0;
+}
+
+#tabs-cont h2 {
+    float:left;
+}
+
+.jiu-jitsu h2 {
+    width:180px; height:114px;
+    background:url('../img/logos/fight-hjjt.png');
+    text-indent:-9999px;
+    margin:0 40px 0 0;
+}
+
+.boxe h2 {
+    width:140px; height:114px;
+    background:url('../img/logos/boxe-logo.png');
+    text-indent:-9999px;
+    margin:0 40px 0 0;
+}
+
+.muay-thai h2 {
+    width:138px; height:114px;
+    background:url('../img/logos/chuteboxe.png');
+    text-indent:-9999px;
+    margin:0 40px 0 0;
+}
+
+
+
+/* Footer */
+
+#footer {
+	width:100%;
+	background:url('../img/x-line-small.png') top center no-repeat;
+	margin:60px 0 90px 0;
+	padding:40px 0 0 0;
+	text-align:center;
+	float:left;
+}
+
+#footer li {
+	margin:0 10px 0 10px;
+	display:inline;
+}
+
+#footer a {
+	font-size:12px;
+	text-transform:uppercase;
+	display:inline;
+}
+
+#footer p {
+	font-size:10px;
+	color:#666;
+}
+
+
+/* Carousel (Twitter Bootstrap) */
+
+.carousel-control {
+    width:50px; height:50px;
+    background:url('../img/arrows.png');
+    position: absolute;
+    top:44%; left:15px;
+    border:none;
+    border-radius:0;
+    outline:none;
+    text-indent:-9999px;
+    margin:0;
+    float:left;
+}
+
+.carousel-control.left {
+    background-position:0 -50px;
+    left:-60px;
+}
+
+.carousel-control.right {
+    background-position:0 0;
+    right:-60px;
+}
