@@ -8,6 +8,100 @@ menu_health: active
 menu_contato:
 keywords: pilates, Yoga, body pump, power jump, rpm, alongamento, Abd, Gluteos, condicionamento físico
 meta_description: A Iron Gymnasium conta com uma estrutura completa para suas aulas da BodySystems, alongamento, Pilates, Yoga e Abd-Glúteos. Veja nossos horários.
+
+body_combat:
+- dia: Segunda-feira
+  horarios: 18h45
+- dia: Sexta-feira
+  horarios: 7h30 e 18h45
+
+body_pump:
+- dia: Terça-feira
+  horarios: 8h e 20h
+- dia: Quinta-feira
+  horarios: 8h e 20h
+
+body_jump:
+- dia: Segunda-feira
+  horarios: 17h15
+- dia: Terça-feira
+  horarios: 16h15 e 18h50
+- dia: Quarta-feira
+  horarios: 17h15
+- dia: Quinta-feira
+  horarios: 16h15
+
+rpm:
+- dia: Segunda-feira
+  horarios: 8h15, 12h15, 16h15, 19h e 20h
+- dia: Terça-feira
+  horarios: 7h, 10h30, 19h30 e 20h45
+- dia: Quarta-feira
+  horarios: 8h15, 12h15, 16h15, 19h e 20h
+- dia: Quinta-feira
+  horarios: 7h, 10h30, 19h30 e 20h45
+- dia: Sexta-feira
+  horarios: 8h15, 12h15, 17h15 e 20h
+- dia: Sábado
+  horarios: 16h
+
+body_attack:
+- dia: Quinta-feira
+  horarios: 18h50
+
+body_balance:
+- dia: Segunda-feira
+  horarios: 15h e 20h15
+- dia: Quarta-feira
+  horarios: 9h
+- dia: Quinta-feira
+  horarios: 15h
+
+body_jam:
+- dia: Quarta-feira
+  horarios: 18h45
+
+cxworx:
+- dia: Segunda-feira
+  horarios: 7h30, 9h45, 18h10 e 19h45
+- dia: Terça-feira
+  horarios: 15h45
+- dia: Quarta-feira
+  horarios: 7h30, 18h10 e 19h45
+- dia: Quinta-feira
+  horarios: 15h45
+- dia: Sexta-feira
+  horarios: 9h45 e 18h10
+
+pilates:
+- dia: Segunda-feira
+  horarios: 9h
+- dia: Terça-feira
+  horarios: 15h
+- dia: Quarta-feira
+  horarios: 20h15
+- dia: Sexta-feira
+  horarios: 9h
+
+yoga:
+- dia: Terça-feira
+  horarios: 12h15 e 18h
+- dia: Quinta-feira
+  horarios: 12h15 e 18h
+
+alongamento:
+- dia: Terça-feira
+  horarios: 9h05
+- dia: Quarta-feira
+  horarios: 15h
+- dia: Quinta-feira
+  horarios: 9h05
+- dia: Sexta-feira
+  horarios: 15h
+
+abd-gluteos:
+- dia: Quarta-feira
+  horarios: 9h45
 ---
 
 <div id="banner" class="carousel slide">
@@ -105,186 +199,118 @@ meta_description: A Iron Gymnasium conta com uma estrutura completa para suas au
 
           <img class="body-systems" src="static/img/logos/body-combat.png" width="147" height="53" alt="Body Combat" />
       		<ul class="body-systems">
-      			<li>
-      				<strong>Segunda-feira</strong>
-      				<p>18h45</p>
-      			</li>
-      			<li>
-      				<strong>Sexta-feira</strong>
-      				<p>7h30 e 18h45</p>
-      			</li>
+            {% for schedule in page.body_combat %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
           <img class="body-systems" src="static/img/logos/body-pump.png" width="147" height="53" alt="Body Pump" />
       		<ul class="body-systems">
-      			<li>
-      				<strong>Terça-feira</strong>
-      				<p>8h e 20h</p>
-      			</li>
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>8h e 20h</p>
-      			</li>
+            {% for schedule in page.body_pump %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
           <img class="body-systems" src="static/img/logos/power-jump.png" width="147" height="53" alt="Power Pump" />
       		<ul class="body-systems">
-      			<li>
-      				<strong>Segunda-feira</strong>
-      				<p>17h15</p>
-      			</li>
-      			<li>
-      				<strong>Terça-feira</strong>
-      				<p>16h15 e 18h50</p>
-      			</li>
-      			<li>
-      				<strong>Quarta-feira</strong>
-      				<p>17h15</p>
-      			</li>
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>16h15</p>
-      			</li>
+            {% for schedule in page.body_jump %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
           <img class="body-systems" src="static/img/logos/rpm.png" width="147" height="53" alt="RPM" />
       		<ul class="body-systems">
-      			<li>
-      				<strong>Segunda-feira</strong>
-      				<p>8h15, 12h15, 16h15, 19h e 20h</p>
-      			</li>
-      			<li>
-      				<strong>Terça-feira</strong>
-      				<p>7h, 10h30, 19h30 e 20h45</p>
-      			</li>
-      			<li>
-      				<strong>Quarta-feira</strong>
-      				<p>8h15, 12h15, 16h15, 19h e 20h</p>
-      			</li>
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>7h, 10h30, 19h30 e 20h45</p>
-      			</li>
-      			<li>
-      				<strong>Sexta-feira</strong>
-      				<p>8h15, 12h15, 17h15 e 20h</p>
-      			</li>
-      			<li>
-      				<strong>Sábado</strong>
-      				<p>16h</p>
-      			</li>
+            {% for schedule in page.rpm %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
           <img class="body-systems" src="static/img/logos/body-attack.png"  height="53" alt="RPM" />
       		<ul class="body-systems">
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>18h50</p>
-      			</li>
+            {% for schedule in page.body_attack %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
           <img class="body-systems" src="static/img/logos/body-balance.png"  height="53" alt="RPM" />
       		<ul class="body-systems">
-      			<li>
-      				<strong>Segunda-feira</strong>
-      				<p>15h e 20h15</p>
-      			</li>
-      			<li>
-      				<strong>Quarta-feira</strong>
-      				<p>9h</p>
-      			</li>
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>15h</p>
-      			</li>
+            {% for schedule in page.body_balance %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
           <img class="body-systems" src="static/img/logos/body-jam.png"  height="53" alt="RPM" />
       		<ul class="body-systems">
-      			<li>
-      				<strong>Quarta-feira</strong>
-      				<p>18h45</p>
-      			</li>
+            {% for schedule in page.body_jam %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
           <h4 class="body-systems hide-h4">CXWORX™</h4>
       		<ul class="body-systems">
-            <li>
-              <strong>Segunda-feira</strong>
-              <p>7h30, 9h45, 18h10 e 19h45</p>
-            </li>
-      			<li>
-      				<strong>Terça-feira</strong>
-      				<p>15h45</p>
-      			</li>
-            <li>
-              <strong>Quarta-feira</strong>
-              <p>7h30, 18h10 e 19h45</p>
-            </li>
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>15h45</p>
-      			</li>
-            <li>
-              <strong>Sexta-feira</strong>
-              <p>9h45 e 18h10</p>
-            </li>
+            {% for schedule in page.cxworx %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
       		<ul class="pilates">
-      			<li>
-      				<strong>Segunda-feira</strong>
-      				<p>9h</p>
-      			</li>
-            <li>
-              <strong>Terça-feira</strong>
-              <p>15h</p>
-            </li>
-            <li>
-              <strong>Quarta-feira</strong>
-              <p>20h15</p>
-            </li>
-      			<li>
-      				<strong>Sexta-feira</strong>
-      				<p>9h</p>
-      			</li>
+            {% for schedule in page.pilates %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
       		<ul class="yoga">
-      			<li>
-      				<strong>Terça-feira</strong>
-      				<p>12h15 e 18h</p>
-      			</li>
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>12h15 e 18h</p>
-      			</li>
+            {% for schedule in page.yoga %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
       		<ul class="alongamento">
-      			<li>
-      				<strong>Terça-feira</strong>
-      				<p>9h05</p>
-      			</li>
-      			<li>
-      				<strong>Quarta-feira</strong>
-      				<p>15h</p>
-      			</li>
-      			<li>
-      				<strong>Quinta-feira</strong>
-      				<p>9h05</p>
-      			</li>
-      			<li>
-      				<strong>Sexta-feira</strong>
-      				<p>15h</p>
-      			</li>
+            {% for schedule in page.alongamento %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
       		<ul class="abd-gluteos">
-      			<li>
-      				<strong>Quarta-feira</strong>
-      				<p>9h45</p>
-      			</li>
+            {% for schedule in page.abd-gluteos %}
+        			<li>
+        				<strong>{{ schedule.dia }}</strong>
+        				<p>{{ schedule.horarios }}</p>
+        			</li>
+            {% endfor %}
       		</ul>
 
         </div> <!-- /column -->
