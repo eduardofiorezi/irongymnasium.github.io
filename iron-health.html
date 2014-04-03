@@ -13,7 +13,7 @@ body_combat:
 - dia: Segunda-feira
   horarios: 18h45
 - dia: Sexta-feira
-  horarios: 7h30 e 18h45
+  horarios: 18h45
 
 body_pump:
 - dia: Terça-feira
@@ -21,7 +21,7 @@ body_pump:
 - dia: Quinta-feira
   horarios: 8h e 20h
 
-body_jump:
+power_jump:
 - dia: Segunda-feira
   horarios: 17h15
 - dia: Terça-feira
@@ -219,7 +219,7 @@ abd-gluteos:
 
           <img class="body-systems" src="static/img/logos/power-jump.png" width="147" height="53" alt="Power Pump" />
       		<ul class="body-systems">
-            {% for schedule in page.body_jump %}
+            {% for schedule in page.power_jump %}
         			<li>
         				<strong>{{ schedule.dia }}</strong>
         				<p>{{ schedule.horarios }}</p>
