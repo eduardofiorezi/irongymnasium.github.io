@@ -29,7 +29,7 @@ power_jump:
 - dia: Quarta-feira
   horarios: 17h15
 - dia: Quinta-feira
-  horarios: 16h15
+  horarios: 16h15 e 18h50
 
 rpm:
 - dia: Segunda-feira
@@ -45,17 +45,12 @@ rpm:
 - dia: Sábado
   horarios: 16h
 
-body_attack:
-- dia: Quinta-feira
-  horarios: 18h50
 
 body_balance:
 - dia: Segunda-feira
   horarios: 15h e 20h15
 - dia: Quarta-feira
   horarios: 9h
-- dia: Quinta-feira
-  horarios: 15h
 
 body_jam:
 - dia: Quarta-feira
@@ -80,6 +75,8 @@ pilates:
   horarios: 15h
 - dia: Quarta-feira
   horarios: 20h15
+- dia:  Quinta-feira
+  horários:  15h
 - dia: Sexta-feira
   horarios: 9h
 
@@ -237,15 +234,15 @@ abd-gluteos:
             {% endfor %}
       		</ul>
 
-          <img class="body-systems" src="static/img/logos/body-attack.png"  height="53" alt="RPM" />
-      		<ul class="body-systems">
+          <!-- <img class="body-systems" src="static/img/logos/body-attack.png"  height="53" alt="RPM" />
+          <ul class="body-systems">
             {% for schedule in page.body_attack %}
-        			<li>
-        				<strong>{{ schedule.dia }}</strong>
-        				<p>{{ schedule.horarios }}</p>
-        			</li>
+              <li>
+                <strong>{{ schedule.dia }}</strong>
+                <p>{{ schedule.horarios }}</p>
+              </li>
             {% endfor %}
-      		</ul>
+          </ul> -->
 
           <img class="body-systems" src="static/img/logos/body-balance.png"  height="53" alt="RPM" />
       		<ul class="body-systems">
