@@ -46,12 +46,6 @@ rpm:
   horarios: 10h
 
 
-body_balance:
-- dia: Segunda-feira
-  horarios: 20h15
-- dia: Quarta-feira
-  horarios: 9h
-
 body_jam:
 - dia: Quarta-feira
   horarios: 18h45
@@ -62,19 +56,8 @@ cxworx:
 - dia: Quarta-feira
   horarios: 7h30, 18h10 e 19h45
 - dia: Sexta-feira
-  horarios: 18h10
+  horarios: 7h30, 18h10
 
-pilates:
-- dia: Segunda-feira
-  horarios: 9h
-- dia: Terça-feira
-  horarios: 15h
-- dia: Quarta-feira
-  horarios: 20h15
-- dia:  Quinta-feira
-  horarios:  15h
-- dia: Sexta-feira
-  horarios: 9h
 
 yoga:
 - dia: Terça-feira
@@ -240,16 +223,17 @@ alongamento:
               </li>
             {% endfor %}
           </ul> -->
-
-          <img class="body-systems" src="static/img/logos/body-balance.png"  height="53" alt="RPM" />
-      		<ul class="body-systems">
-            {% for schedule in page.body_balance %}
-        			<li>
-        				<strong>{{ schedule.dia }}</strong>
-        				<p>{{ schedule.horarios }}</p>
-        			</li>
-            {% endfor %}
-      		</ul>
+          {% if page.body_balance %}
+            <img class="body-systems" src="static/img/logos/body-balance.png"  height="53" alt="RPM" />
+        		<ul class="body-systems">
+              {% for schedule in page.body_balance %}
+          			<li>
+          				<strong>{{ schedule.dia }}</strong>
+          				<p>{{ schedule.horarios }}</p>
+          			</li>
+              {% endfor %}
+        		</ul>
+          {% endif %}
 
           <img class="body-systems" src="static/img/logos/body-jam.png"  height="53" alt="RPM" />
       		<ul class="body-systems">
@@ -261,15 +245,17 @@ alongamento:
             {% endfor %}
       		</ul>
 
-          <h4 class="body-systems hide-h4">CXWORX™</h4>
-      		<ul class="body-systems">
-            {% for schedule in page.cxworx %}
-        			<li>
-        				<strong>{{ schedule.dia }}</strong>
-        				<p>{{ schedule.horarios }}</p>
-        			</li>
-            {% endfor %}
-      		</ul>
+          {% if page.cxworx %}
+            <h4 class="body-systems hide-h4">CXWORX™</h4>
+        		<ul class="body-systems">
+              {% for schedule in page.cxworx %}
+          			<li>
+          				<strong>{{ schedule.dia }}</strong>
+          				<p>{{ schedule.horarios }}</p>
+          			</li>
+              {% endfor %}
+        		</ul>
+          {% endif %}
 
       		<ul class="pilates">
             {% for schedule in page.pilates %}
