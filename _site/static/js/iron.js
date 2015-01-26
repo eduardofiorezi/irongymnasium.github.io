@@ -16,6 +16,7 @@ var App = {
 
     StartApp: function() {
         try {
+            this.FillHtmlData();
             this.InterfaceActions();
             this.FormActions();
         } catch (e) {
@@ -24,8 +25,20 @@ var App = {
         }
     },
 
+    FillHtmlData: function() {
+      if(window.location.href.indexOf("iron-gym.html") > -1) {
+		    $.getJSON("http://adminapi.herokuapp.com/api/v1/data.json", function(data) {
+
+          $.each(data['iron-gym']['body_content'], function( index, data ) {
+		        $(".content-int").append("<h3>" + data['title'] + "</h3>");
+		        $(".content-int").append("<p>" + data['text'] + "</p>");
+          });
+		    });
+      };
+    },
+
     InterfaceActions: function() {
-        
+
   		$("#tabs a").click(function(){
         $("#tabs a").removeClass("current");
         $(this).addClass("current");
@@ -34,13 +47,13 @@ var App = {
   			return false;
 
   		}).filter(':first').click();
-        
+
         // Nav
         $("nav a.active").append("<span class=\"bullet\"></span>");
         $("nav a").hover(
             function() {
                 $(this).append("<span class=\"bullet\"></span>");
-            }, 
+            },
             function() {
               $("nav a:not(.active) span.bullet").remove();
             }
@@ -64,7 +77,7 @@ var App = {
 
         // Fancybox
         $(".fancybox").fancybox();
-        
+
         $(".auto-load-fancybox").fancybox({
 		      minWidth	: 700
         });
@@ -74,7 +87,7 @@ var App = {
 
     FormActions: function() {
 
-		
+
 
     } // Formularios
 
