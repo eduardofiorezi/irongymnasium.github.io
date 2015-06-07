@@ -16,9 +16,9 @@ body_pump:
 
 power_jump:
 - dia: Terça-feira
-  horarios: 16h15 e 18h50
+  horarios: 18h50
 - dia: Quinta-feira
-  horarios: 16h15 e 18h50
+  horarios: 18h50
 
 rpm:
 - dia: Segunda-feira
@@ -38,9 +38,9 @@ body_jam:
 
 cxworx:
 - dia: Segunda-feira
-  horarios: 7h30, 18h10 e 19h45
+  horarios: 7h30, 18h10
 - dia: Quarta-feira
-  horarios: 7h30, 18h10 e 19h45
+  horarios: 7h30, 18h10
 - dia: Sexta-feira
   horarios: 7h30, 18h10
 
@@ -56,10 +56,8 @@ alongamento:
 - dia: Quinta-feira
   horarios: 9h05
 
-pilates:
-- dia: Segunda-feira
-  horarios: 9h e 20h15
-- dia: Quarta-feira
-  horarios: 9h e 20h15
-- dia: Sexta-feira
-  horarios: 9h
+iron_circuit:
+- dia: Terça-feira
+  horarios: 16h15
+- dia: Quinta-feira
+  horarios: 16h15
