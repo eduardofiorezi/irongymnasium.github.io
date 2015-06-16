@@ -34,8 +34,11 @@ meta_description: A Iron Gymnasium conta com uma estrutura completa para suas au
     <li>
         <a href="#alongamento" data-show="alongamento">Alongamento</a>
     </li>
-    <li>
+    <!-- <li>
         <a href="#abd-gluteos" data-show="abd-gluteos">Abd/Gluteos</a>
+    </li> -->
+    <li>
+        <a href="#iron-circuit" data-show="iron-circuit">Iron Circuit</a>
     </li>
 </ul>
 
@@ -90,8 +93,13 @@ meta_description: A Iron Gymnasium conta com uma estrutura completa para suas au
             </div>
 
             <div class="abd-gluteos">
-            	<h2>Abd/Gluteos</h2>
-            	<p>Aula composta de exercícios localizados específicos para a região abdominal e dos gluteos, utilizando-se variações de técnicas e de materiais ( fitball, medicine ball, halteres, caneleira, step, bastões, barras, elásticos etc). Tendo um benefício na melhora da postura, força e resistência muscular localizada.</p>
+              <h2>Abd/Gluteos</h2>
+              <p>Aula composta de exercícios localizados específicos para a região abdominal e dos gluteos, utilizando-se variações de técnicas e de materiais ( fitball, medicine ball, halteres, caneleira, step, bastões, barras, elásticos etc). Tendo um benefício na melhora da postura, força e resistência muscular localizada.</p>
+            </div>
+
+            <div class="iron-circuit">
+              <h2>Iron Circuit</h2>
+              <p>Venha conhecer nossa nova aula.</p>
             </div>
 
         </section> <!-- /tabs-cont -->
@@ -218,14 +226,23 @@ meta_description: A Iron Gymnasium conta com uma estrutura completa para suas au
             {% endfor %}
       		</ul>
 
-      		<ul class="abd-gluteos">
+          <ul class="abd-gluteos">
             {% for schedule in site.data.health.abd-gluteos %}
-        			<li>
-        				<strong>{{ schedule.dia }}</strong>
-        				<p>{{ schedule.horarios }}</p>
-        			</li>
+              <li>
+                <strong>{{ schedule.dia }}</strong>
+                <p>{{ schedule.horarios }}</p>
+              </li>
             {% endfor %}
-      		</ul>
+          </ul>
+
+          <ul class="iron-circuit">
+            {% for schedule in site.data.health.iron_circuit %}
+              <li>
+                <strong>{{ schedule.dia }}</strong>
+                <p>{{ schedule.horarios }}</p>
+              </li>
+            {% endfor %}
+          </ul>
 
         </div> <!-- /column -->
 
