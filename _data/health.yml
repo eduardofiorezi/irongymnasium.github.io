@@ -1,3 +1,17 @@
+pilates:
+- dia: Segunda-feira
+  horarios: 9h00
+- dia: Quarta-feira
+  horarios: 9h00
+- dia: Sexta-feira
+  horarios: 9h00
+
+pilates:
+- dia: Segunda-feira
+  horarios: 20h15
+- dia: Quarta-feira
+  horarios: 20h15
+
 body_combat:
 - dia: Segunda-feira
   horarios: 18h45
@@ -39,6 +53,13 @@ cxworx:
   horarios: 7h30, 18h10
 - dia: Sexta-feira
   horarios: 7h30, 18h10
+
+cxworx:
+- dia: Segunda-feira
+  horarios: 19h45
+- dia: Quarta-feira
+  horarios: 19h45
+
 
 yoga:
 - dia: Terça-feira
