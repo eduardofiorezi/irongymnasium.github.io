@@ -8,9 +8,11 @@ pilates:
 
 pilates:
 - dia: Segunda-feira
-  horarios: 20h15
+  horarios: 9h00 e 20h15
 - dia: Quarta-feira
-  horarios: 20h15
+  horarios: 9h00 e 20h15
+- dia: Sexta-feira
+  horarios: 9h00
 
 body_combat:
 - dia: Segunda-feira
@@ -54,13 +56,6 @@ cxworx:
 - dia: Sexta-feira
   horarios: 7h30, 18h10
 
-cxworx:
-- dia: Segunda-feira
-  horarios: 19h45
-- dia: Quarta-feira
-  horarios: 19h45
-
-
 yoga:
 - dia: Terça-feira
   horarios: 12h15 e 18h
@@ -73,7 +68,7 @@ alongamento:
 - dia: Quinta-feira
   horarios: 9h05
 
-iron circuit:
+iron_circuit:
 - dia: Terça-feira
   horarios: 16h15
 - dia: Quinta-feira

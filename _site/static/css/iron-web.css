@@ -221,11 +221,11 @@ nav a {
 .column h3, .column h4 {
 	width:260px; height:40px;
 	background-color:#000;
-	
+
 	background:
-		url('../img/sprite-icons.png') right no-repeat, 
+		url('../img/sprite-icons.png') right no-repeat,
 		url('../img/column-title-bg.png') top repeat-x;
-	
+
 	padding:0 15px 0 15px;
 	line-height:40px;
 	text-transform:uppercase;
@@ -243,10 +243,10 @@ nav a {
 /* Treinamento */
 
 #treinamento {}
-	
+
 #treinamento h3, #treinamento h4 {
 	background:
-		url('../img/sprite-icons.png') 242px -1px no-repeat, 
+		url('../img/sprite-icons.png') 242px -1px no-repeat,
 		url('../img/column-title-bg.png') top repeat-x;
 }
 
@@ -329,7 +329,7 @@ nav a {
 
 #iron-tv h3 {
 	background:
-		url('../img/sprite-icons.png') 565px -41px no-repeat, 
+		url('../img/sprite-icons.png') 565px -41px no-repeat,
 		url('../img/column-title-bg.png') top repeat-x;
   width:575px;
 }
@@ -351,7 +351,7 @@ nav a {
 
 #curta-fb h3 {
 	background:
-		url('../img/sprite-icons.png') 565px -82px no-repeat, 
+		url('../img/sprite-icons.png') 565px -82px no-repeat,
 		url('../img/column-title-bg.png') top repeat-x;
   width:575px;
 }
@@ -416,7 +416,7 @@ h3.hd-small {
 	float:right;
     width:90%;
 }
-	
+
 #horarios h4 {
 	background:
 		url('../img/sprite-icons.png') 244px -122px no-repeat,
@@ -467,7 +467,7 @@ h3.hd-small {
 	background-color:#000;
 
 	background:
-		url('../img/sprite-icons.png') 350px 0 no-repeat, 
+		url('../img/sprite-icons.png') 350px 0 no-repeat,
 		url('../img/column-title-bg.png') top repeat-x;
 
 	padding:0 15px 0 15px;
@@ -522,11 +522,11 @@ h3.hd-small {
 }
 
 .email-equipe {
-    
+
 }
 
 .facebook-equipe {
-    
+
 }
 
 
@@ -557,7 +557,7 @@ h3.hd-small {
 /*-*/
 
 #col-01 {
-	width:274px; 
+	width:274px;
 	background:url('../img/y-line-short.png') right no-repeat;
 	position:relative;
 	font-size:12px;
@@ -573,7 +573,7 @@ h3.hd-small {
 /*-*/
 
 #col-02 {
-	width:233px; 
+	width:233px;
 	padding:0 20px 0 40px;
 }
 
@@ -588,7 +588,7 @@ h3.hd-small {
 /*-*/
 
 #col-03 {
-	width:301px; 
+	width:301px;
 	background:url('../img/y-line-short.png') left no-repeat;
 	float:right !important;
 }
@@ -599,7 +599,7 @@ h3.hd-small {
 	text-indent:-9999px;
 	margin:8px 20px 0 0;
 	outline:none;
-	float:right; 
+	float:right;
 }
 
 #col-03 > a:hover {
@@ -673,6 +673,11 @@ h3.hd-small {
 }
 .content-int.contact {
   width:350px;
+}
+
+.content-int ul { margin-left:20px;}
+.content-int ul li{
+  list-style-type:disc;
 }
 
 .content-int h3 {
