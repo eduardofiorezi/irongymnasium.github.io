@@ -1,0 +1,55 @@
+jiu-jitsu:
+- dia: Segunda-feira
+  horarios: 6h30, 10h, 12h15, 16h, 17h30, 18h
+- dia: Terça-feira
+  horarios: 12h15, 17h30, 18h30, 22h45
+- dia: Quarta-feira
+  horarios: 6h30, 10h, 12h15, 16h, 17h30, 18h30
+- dia: Quinta-feira
+  horarios: 12h15, 17h30, 18h30, 22h45
+- dia: Sexta-feira
+  horarios: 6h30,10h, 12h15,16h, 17h30, 18h30
+- dia: Sábado
+  horarios: 10h30
+
+kickboxing:
+- dia: Segunda-feira
+  horarios: 9h30, 12h15, 18h30
+- dia: Terça-feira
+  horarios: 15h, 18h30
+- dia: Quarta-feira
+  horarios: 9h30, 12h15, 18h30
+- dia: Quinta-feira
+  horarios: 15h, 18h30
+- dia: Sexta-feira
+  horarios: 9h30, 12h15, 18h30
+- dia: Sábado
+  horarios: 11h
+
+muay:
+- dia: Segunda-feira
+  horarios: 15h, 19h30, 21h30
+- dia: Terça-feira
+  horarios: 19h30, 22h45
+- dia: Quarta-feira
+  horarios: 15h, 19h30, 21h30
+- dia: Quinta-feira
+  horarios: 19h30, 22h45
+- dia: Sexta-feira
+  horarios: 15h, 19h30, 21h30
+
+judo:
+- dia: Terça-feira
+  horarios: 18h30
+- dia: Quinta-feira
+  horarios: 18h30
+
+boxe:
+- dia: Segunda-feira
+  horarios: 20h30
+- dia: Terça-feira
+  horarios: 12h15, 20h30
+- dia: Quarta-feira
+  horarios: 20h30
+- dia: Quinta-feira
+  horarios: 12h15, 20h30

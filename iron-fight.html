@@ -124,110 +124,48 @@ meta_description: A Iron Gymnasium conta com uma estrutura completa para você p
           	<h4>Horários</h4>
 
             <ul class="jiu-jitsu">
-              <li>
-                <strong>Segunda-feira</strong>
-                <p>6h30, 10h, 12h15, 16h, 17h30 e 18h30</p>
-              </li>
-              <li>
-                <strong>Terça-feira</strong>
-                <p>12h15(avançado), 17h30, 18h30, 20h30 e 22h45</p>
-              </li>
-              <li>
-                <strong>Quarta-feira</strong>
-                <p>6h30, 10h, 12h15, 16h, 17h30 e 18h30</p>
-              </li>
-              <li>
-                <strong>Quinta-feira</strong>
-                <p>12h15(avançado), 17h30, 18h30, 20h30 e 22h45</p>
-              </li>
-              <li>
-                <strong>Sexta-feira</strong>
-                <p>6h30, 10h, 12h15, 16h, 17h30 e 18h30</p>
-              </li>
-              <li>
-                <strong>Sábado</strong>
-                <p>10h30</p>
-              </li>
+              {% for schedule in site.data.fight.jiu-jitsu %}
+          			<li>
+          				<strong>{{ schedule.dia }}</strong>
+          				<p>{{ schedule.horarios }}</p>
+          			</li>
+              {% endfor %}
             </ul>
 
             <ul class="kickboxing">
-              <li>
-                <strong>Segunda-feira</strong>
-                <p>9h30, 12h15, 18h30 e 21:30</p>
-              </li>
-              <li>
-                <strong>Terça-feira</strong>
-                <p>15h e 18h30</p>
-              </li>
-              <li>
-                <strong>Quarta-feira</strong>
-                <p>9h30, 12h15, 18h30 e 21:30</p>
-              </li>
-              <li>
-                <strong>Quinta-feira</strong>
-                <p>15h e 18h30</p>
-              </li>
-              <li>
-                <strong>Sexta-feira</strong>
-                <p>9h30, 12h15, 18h30 e 21:30</p>
-              </li>
-              <li>
-                <strong>Sábado</strong>
-                <p>11h</p>
-              </li>
+              {% for schedule in site.data.fight.kickboxing %}
+          			<li>
+          				<strong>{{ schedule.dia }}</strong>
+          				<p>{{ schedule.horarios }}</p>
+          			</li>
+              {% endfor %}
             </ul>
 
             <ul class="judo">
-              <li>
-                <strong>Terça-feira</strong>
-                <p>18h30</p>
-              </li>
-              <li>
-                <strong>Quinta-feira</strong>
-                <p>18h30</p>
-              </li>
+              {% for schedule in site.data.fight.judo %}
+          			<li>
+          				<strong>{{ schedule.dia }}</strong>
+          				<p>{{ schedule.horarios }}</p>
+          			</li>
+              {% endfor %}
             </ul>
 
             <ul class="muay-thai">
-              <li>
-                <strong>Segunda-feira</strong>
-                <p>15h, 19h30</p>
-              </li>
-              <li>
-                <strong>Terça-feira</strong>
-                <p>19h30 e 22h45</p>
-              </li>
-              <li>
-                <strong>Quarta-feira</strong>
-                 <p>15h, 19h30</p>
-              </li>
-              <li>
-                <strong>Quinta-feira</strong>
-                <p>19h30 e 22h45</p>
-              </li>
-              <li>
-                <strong>Sexta-feira</strong>
-                <p>15h e 19h30</p>
-              </li>
+              {% for schedule in site.data.fight.muay %}
+          			<li>
+          				<strong>{{ schedule.dia }}</strong>
+          				<p>{{ schedule.horarios }}</p>
+          			</li>
+              {% endfor %}
             </ul>
 
             <ul class="boxe">
-              <li>
-                <strong>Segunda-feira</strong>
-                <p>20h30</p>
-              </li>
-              <li>
-                <strong>Terça-feira</strong>
-                <p>12h15 e 20h30</p>
-              </li>
-              <li>
-                <strong>Quarta-feira</strong>
-                <p>20h30</p>
-              </li>
-              <li>
-                <strong>Quinta-feira</strong>
-                <p>12h15 e 20h30</p>
-              </li>
+              {% for schedule in site.data.fight.boxe %}
+          			<li>
+          				<strong>{{ schedule.dia }}</strong>
+          				<p>{{ schedule.horarios }}</p>
+          			</li>
+              {% endfor %}
             </ul>
 
         </div> <!-- /column -->
