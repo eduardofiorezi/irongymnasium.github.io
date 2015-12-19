@@ -20,11 +20,11 @@ rpm:
 - dia: Segunda-feira
   horarios: 8h15, 16h15, 19h e 20h
 - dia: Terça-feira
-  horarios: 7h, 10h30, 19h30
+  horarios: 7h, 10h30
 - dia: Quarta-feira
   horarios: 8h15, 16h15, 19h e 20h
 - dia: Quinta-feira
-  horarios: 7h, 10h30, 19h30
+  horarios: 7h, 10h30
 - dia: Sexta-feira
   horarios: 8h15, 17h15 e 20h
 
@@ -37,8 +37,8 @@ cxworx:
   horarios: 7h30, 18h10, 19h45
 - dia: Quarta-feira
   horarios: 7h30, 18h10, 19h45
-- dia: Sexta-feira
-  horarios: 7h30, 18h10
+
+iron_circuit:
 
 yoga:
 - dia: Terça-feira
@@ -51,18 +51,6 @@ alongamento:
   horarios: 9h05
 - dia: Quinta-feira
   horarios: 9h05
-
-iron_circuit:
-- dia: Segunda-feira
-  horarios: 12h15
-- dia: Terça-feira
-  horarios: 16h15
-- dia: Quarta-feira
-  horarios: 12h15
-- dia: Quinta-feira
-  horarios: 16h15
-- dia: Sexta-feira
-  horarios: 12h15
 
 pilates:
 - dia: Segunda-feira
